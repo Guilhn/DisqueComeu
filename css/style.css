@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+.brand-logo {
+  font-style: 12px !important;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.front-logo {
+  font-size: 90%;
+  font-family: 'Fredoka One', cursive;
+}
+
+.back-logo {
+  font-size: 90%;
+  font-family: 'DM Sans', sans-serif;
+}
