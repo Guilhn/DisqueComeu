@@ -1,0 +1,16 @@
+{
+  "name": "disquecomeu",
+  "version": "1.0.0",
+  "description": "Um sistema web de entrega de comida",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guilhn/DisqueComeu.git"
+  },
+  "author": "Guilherme Henrique Nascimento",
+  "license": "ISC"
+}

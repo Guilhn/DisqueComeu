@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
 
+
+$cor-primaria: #b71c1c;
+
+.corFundo{
+  background-color: $cor-primaria;
+}
+
+.corTexto{
+  color: $cor-primaria;
+}
+
 .brand-logo {
   font-style: 12px !important;
+}
+
+.pagination{
+  li{
+    .active{
+      background-color: $cor-primaria;
+    }
+  }
+
 }
 
 .icon-block {
@@ -21,4 +41,8 @@
 .back-logo {
   font-size: 90%;
   font-family: 'DM Sans', sans-serif;
+}
+
+.pageLogin {
+  margin-top: 60px;
 }
