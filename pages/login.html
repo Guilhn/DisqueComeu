@@ -9,23 +9,23 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="../assets/img/favicon.ico" rel="icon" type="image/png" sizes="16x16" >
+  <link href="../assets/img/favicon.ico" rel="icon" type="image/png" sizes="16x16">
   <link href="../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="../assets/css/pacman.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
-<body>
-  <nav class="corFundo" role="navigation">
+<body class="fundo">
+  <nav class="cor-fundo-primaria" role="navigation">
     <div class="nav-wrapper container ">
       <a id="logo" href="../index.html" class="brand-logo"><span class="front-logo">Disque</span> <span class="back-logo">Comeu</span> <i class="fas fa-hamburger"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Cadastre-se</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
         <li><a href="pages/login.html">Entrar</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Cadastre-se</a></li>
-        <li><a href="#">Entrar</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="#!">Entrar</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -33,14 +33,18 @@
 
 
 
-  <main class="pageLogin">
+  <main class="pageFormulario">
 
     <div id="login-page" class="row">
-      <div class="col s4 offset-s4 card-panel">
+      <div class="col s12 m4 offset-m4 card-panel">
         <form action="login" method="post" class="login-form">
           <div class="row">
             <div class="input-field col s12 center">
-              <img src="img/logo_white.svg" alt="" class="circle responsive-img valign profile-image-login CorFundo">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hamburger" class="cor-texto-primaria" role="img" width="20%" viewBox="0 0 512 512">
+                <path fill="currentColor"
+                  d="M464 256H48a48 48 0 0 0 0 96h416a48 48 0 0 0 0-96zm16 128H32a16 16 0 0 0-16 16v16a64 64 0 0 0 64 64h352a64 64 0 0 0 64-64v-16a16 16 0 0 0-16-16zM58.64 224h394.72c34.57 0 54.62-43.9 34.82-75.88C448 83.2 359.55 32.1 256 32c-103.54.1-192 51.2-232.18 116.11C4 180.09 24.07 224 58.64 224zM384 112a16 16 0 1 1-16 16 16 16 0 0 1 16-16zM256 80a16 16 0 1 1-16 16 16 16 0 0 1 16-16zm-128 32a16 16 0 1 1-16 16 16 16 0 0 1 16-16z">
+                </path>
+              </svg>
               <h4 class="center login-form-text">Login</h4>
             </div>
           </div>
@@ -48,8 +52,8 @@
 
             <div class="input-field col s12">
               <div class="col s12">
-                <i class="material-icons prefix CorTexto ">account_circle</i>
-                <input placeholder="Usuário" id="username" name="login" value="" class="" type="text">
+                <i class="material-icons prefix cor-texto-primaria ">account_circle</i>
+                <input placeholder="Usuário" id="username" name="login" value="" class="corFocus" type="text">
               </div>
 
             </div>
@@ -57,8 +61,8 @@
           <div class="row margin">
             <div class="input-field col s12">
               <div class="col s12">
-                <i class="material-icons prefix CorTexto">vpn_key</i>
-                <input placeholder="Senha" id="password" name="senha" class="" type="password">
+                <i class="material-icons prefix cor-texto-primaria">vpn_key</i>
+                <input placeholder="Senha" id="password" name="senha" class="corFocus" type="password">
 
               </div>
             </div>
@@ -67,7 +71,7 @@
 
           <div class="row">
             <div class="input-field col offset-s3 s6">
-              <button type="submit" class="btn CorFundo CorLink waves-effect waves-light col s12">Entrar</button>
+              <button type="submit" class="btn cor-fundo-primaria corHover waves-effect waves-light col s12">Entrar</button>
             </div>
           </div>
           <div class="row">
@@ -84,7 +88,7 @@
 
 
 
-  <footer class="page-footer corFundo">
+  <footer class="page-footer fundo-efeito-secundario">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
