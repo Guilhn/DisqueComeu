@@ -2,7 +2,7 @@
   $(function() {
 
     $('.sidenav').sidenav();
-    $('.scrollspy').scrollSpy();
+    $('.materialboxed').materialbox();
     M.AutoInit();
 
   }); // end of document ready
