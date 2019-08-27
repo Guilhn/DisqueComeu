@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var clean = require('gulp-clean');
+var watch = require('gulp-watch');
 
 
 gulp.task('sass', (done) => {
@@ -23,9 +24,14 @@ gulp.task('clear', (done) => {
   console.log('done clear!');
 });
 
+gulp.task('watch',  (done) => {
+  gulp.watch('./dev/scss/*.scss',  gulp.series('clear','sass'));
+  done();
+});
+
 gulp.task('default',
 
-  gulp.series('clear', 'sass'),
+// gulp.series('clear', 'sass', 'watch'),
 
   (done) => {
     console.log("teste!!!")
