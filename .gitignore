@@ -1,2 +1,2 @@
 # Ignora a pasta dos pacotes node_modules
-node_modules/**
+/node_modules/**
