@@ -19,13 +19,11 @@
     <div class="nav-wrapper container ">
       <a id="logo" href="../index.html" class="brand-logo"><span class="front-logo">Disque</span> <span class="back-logo">Comeu</span> <i class="fas fa-hamburger"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="cadastro-pratos.html">Cadastar Pratos</a></li>
         <li><a href="cadastro.html">Cadastre-se</a></li>
         <li><a href="#!">Entrar</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="cadastro-pratos.html">Cadastar Pratos</a></li>
         <li><a href="cadastro.html">Cadastre-se</a></li>
         <li><a href="#!">Entrar</a></li>
       </ul>
@@ -55,7 +53,8 @@
             <div class="input-field col s12">
               <div class="col s12">
                 <i class="material-icons prefix cor-texto-primaria ">account_circle</i>
-                <input placeholder="Usuário" id="username" name="login" value="" class="corFocus" type="text">
+                <input placeholder="Usuário" id="username" name="login" data-position="top" data-tooltip="Digite <b>admin</b> para acessar as telas de  <b>administrador</b> <br><br> ou <b>qualquer</b> outra coisa para as telas de <b>consumidor</b>"
+                  value="" class="corFocus tooltipped" type="text">
               </div>
 
             </div>
@@ -73,7 +72,8 @@
 
           <div class="row">
             <div class="input-field col offset-s3 s6">
-              <button type="submit" class="btn cor-fundo-primaria corHover waves-effect waves-light col s12">Entrar</button>
+              <button type="submit" class="btn cor-fundo-primaria corHover waves-effect waves-light col s12 tooltipped" data-position="top"
+                data-tooltip="Digite <b>admin</b> para acessar as telas de  <b>administrador</b> <br><br> ou <b>qualquer</b> outra coisa para as telas de <b>consumidor</b>">Entrar</button>
             </div>
           </div>
           <div class="row">
