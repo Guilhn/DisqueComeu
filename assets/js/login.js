@@ -3,9 +3,9 @@ var a = "admin";
 $(document).ready(function() {
   $('#logar').on('click', function() {
     if (a == $('#username').val()) {
-      alert($('#username').val());
+      window.location.href = "../pages/template/administrador.html";
     } else {
-      alert("outra coisa");
+      window.location.href = "../pages/template/consumidor.html";
     }
   });
 
