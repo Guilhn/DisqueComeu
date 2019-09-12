@@ -60,7 +60,7 @@
             <div class="col s12 m6 offset-m3 card-panel">
               <div class="card-content">
                 <div class="input-field col s12 center">
-                  <h4 class="center login-form-text">Cadastrar Prato</h4>
+                  <h4 class="center login-form-text">Editar Prato</h4>
                   <br>
                 </div>
               </div>
@@ -73,13 +73,13 @@
                     <div>
                       <div class="input-field col s12 m6">
                         <i class="material-icons prefix cor-texto-primaria">local_dining</i>
-                        <input class="" value="" type="text" placeholder="Prato" name="nome">
+                        <input class="" value="Pizza de Calabresa" type="text" placeholder="Prato" name="nome">
                         <label class="black-text active">Prato <span class="red-text">*</span></label>
                       </div>
                       <div class="input-field col s12 m6">
                         <select>
-                          <option value="" disabled selected>Categoria</option>
-                          <option value="1">Pizza</option>
+                          <option value="" disabled>Categoria</option>
+                          <option value="1" selected>Pizza</option>
                           <option value="2">Lanche</option>
                           <option value="3">Porção</option>
                         </select>
@@ -92,18 +92,17 @@
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix cor-texto-primaria">description</i>
-                      <input class="" value="" placeholder="Descrição" id="user" type="text" name="login">
+                      <input class="" value="Pizza de Tamanho médio (8 pedaços) - Sabor Calabresa" placeholder="Descrição" id="user" type="text" name="login">
                       <label class="black-text active">Descrição <span class="red-text">*</span></label>
                     </div>
 
                     <div class="input-field col s12">
                       <i class="material-icons prefix cor-texto-primaria">attach_money</i>
-                      <input class="" value="" id="Valor" type="text" placeholder="Valor" name="senha">
+                      <input class="" value="35,00" id="Valor" type="text" placeholder="Valor" name="senha">
                       <label class="black-text active">Valor <span class="red-text">*</span></label>
 
                     </div>
                   </div>
-
 
                   <div class="row">
                     <div class="input-field col s12">
@@ -120,8 +119,8 @@
                               <div class="dropify-loader"></div>
                               <div class="dropify-errors-container">
                                 <ul></ul>
-                              </div><input id="foto" name="foto" type="file" class="dropify form-control" data-default-file=""><button type="button" class="dropify-clear">Remover</button>
-                              <div class="dropify-preview"><span class="dropify-render"></span>
+                              </div><input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="../../../assets/img/pizza.jpg"><button type="button" class="dropify-clear">Remover</button>
+                              <div class="dropify-preview" style="display: block;"><span class="dropify-render"><img src="../../../assets/img/pizza.jpg"></span>
                                 <div class="dropify-infos">
                                   <div class="dropify-infos-inner">
                                     <p class="dropify-filename"><span class="dropify-filename-inner"></span></p>

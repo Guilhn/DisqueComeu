@@ -10,6 +10,8 @@ $primaria-btn-esquerda: #ff6f00;
 $secundaria-btn-esquerda: #ffca28;
 $primaria-btn-direita: #962020;
 $secundaria-btn-direita: #fd6031;
+$borda-title: #ff931f;
+$cor-title: #ffb61f;
 
 body {
   display: flex;
@@ -50,12 +52,22 @@ main {
   background-color: $secundaria;
 }
 
+.select-status {
+  margin-left: 25%;
+  width: 50%;
+  margin-right: 25%;
+}
+
 .cor-texto-primaria {
   color: $primaria;
 }
 
 .cor-texto-secundaria {
   color: $secundaria;
+}
+
+.cor-texto-terciaria {
+  color: $cor-title;
 }
 
 .texto-branco {
@@ -128,6 +140,10 @@ main {
   margin-top: 15px;
 }
 
+.card-title p {
+  font-size: 80%;
+}
+
 .text-ellipsis {
   overflow: hidden;
   white-space: nowrap;
@@ -147,6 +163,10 @@ main {
   font-family: 'Fredoka One', cursive;
 }
 
+.font-title {
+  font-family: 'Fredoka One', cursive;
+}
+
 .back-logo {
   font-size: 90%;
   font-family: 'DM Sans', sans-serif;
@@ -155,6 +175,14 @@ main {
 .pageFormulario {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.card-content {
+  padding: 15px !important;
+}
+
+.btn-carrinho {
+  margin-top: 20px;
 }
 
 .card-reveal {
@@ -173,5 +201,60 @@ main {
 
   h5 {
     margin-left: 15px;
+  }
+}
+// Estilo TItle
+
+.text-border {
+  text-shadow: 2px 0 0 $borda-title, -2px 0 0 $borda-title, 0 2px 0 $borda-title , 0 -2px 0 $borda-title, 1px 1px $borda-title, -1px -1px 0 $borda-title, 1px -1px 0 $borda-title, -1px 1px 0 $borda-title;
+}
+
+.title {
+  margin-left: 5%;
+  margin-top: 2px;
+  margin-bottom: 1px;
+  border: 0;
+  height: 65px;
+  width: 95%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #8e1f80, #8e1f80, #8e1f80, #8e1f80);
+  color: white;
+}
+
+.hr-title-top {
+  margin-left: 150px;
+  /* padding-left: 124px; */
+  height: 7px;
+  background-color: #8e1f80;
+  border: none;
+}
+
+.hr-title-bottom {
+  margin-left: 96px;
+  /* padding-left: 124px; */
+  height: 3px;
+  background-color: #dc2296;
+  border: none;
+}
+
+.hr-carrinho {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 3px;
+  background-color: $secundaria;
+  border: none;
+}
+// -----------------------------------
+@media only screen and (max-width: 600px) {
+  .fa-hamburger {
+    font-size: 120%;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .card-title p {
+    font-size: 80%;
+  }
+
+  .card-content {
+    padding: 15px !important;
   }
 }
