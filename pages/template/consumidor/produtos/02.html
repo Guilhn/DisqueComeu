@@ -8,26 +8,35 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="../../assets/img/favicon.ico" rel="icon" type="image/png" sizes="16x16">
-  <link href="../../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="../../assets/css/pacman.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../../../assets/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../../../assets/img/favicon.ico" rel="icon" type="image/png" sizes="16x16">
+  <link href="../../../../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../../../assets/css/dropify.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
 
 <body class="fundo">
   <nav class="cor-fundo-primaria" role="navigation">
     <div class="nav-wrapper container ">
-      <a id="logo" href="../../index.html" class="brand-logo"><span class="front-logo hide-on-small-only">Disque</span> <span class="back-logo hide-on-small-only">Comeu</span> <i class="fas fa-hamburger"></i></a>
+      <a id="logo" href="../consumidor.html" class="brand-logo"><span class="front-logo hide-on-small-only">Disque</span> <span class="back-logo hide-on-small-only">Comeu</span> <i class="fas fa-hamburger"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="../../index.html">Inicio</a></li>
-        <li><a href="../cadastro.html">Cadastre-se</a></li>
-        <li><a href="../login.html">Entrar</a></li>
+        <li><a href="../consumidor.html">Inicio</a></li>
+        <li><a href="../carrinho.html">Carrinho</a></li>
+        <li><a class="dropdown-trigger fontMenu" href="javascript:;" data-target="dropdown1">Maria<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a title="Sair" href="../../../../index.html"><i class="material-icons right">exit_to_app</i>Sair</a></li>
+      </ul>
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="../perfil.html"><span class=""> Perfil</span></a></li>
+        <li><a href="../pedidos.html"><span class=""> Pedidos</span></a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="../../index.html">Inicio</a></li>
-        <li><a href="../cadastro.html">Cadastre-se</a></li>
-        <li><a href="../login.html">Entrar</a></li>
+        <li><a href="../consumidor.html">Inicio</a></li>
+        <li><a href="../carrinho.html">Carrinho</a></li>
+        <li><a href="../perfil.html">Perfil</a></li>
+        <li><a href="../pedidos.html">Pedidos</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a title="Sair" href="../../../../index.html"><i class="material-icons right">exit_to_app</i>Sair</a></li>
       </ul>
       <a href="javascript:;" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -60,7 +69,7 @@
             <div class="card-content">
               <p>Pizza</p>
               <span class="card-title text-ellipsis">Pizza de Calabresa</span>
-              <img width="100%" src="../../assets/img/salada-mista.jpg" class="responsive-img materialboxed" alt="">
+              <img width="100%" src="../../../../assets/img/arroz-camarão.jpg" class="responsive-img materialboxed" alt="">
               <div class="row">
                 <h5 class="col s12 m12 l8">R$ 35,00</h5>
                 <a class="col s12 m12 l4 margin-btn waves-effect waves-light btn-esquerda btn modal-trigger" href="#modal1">VER</a>
@@ -74,7 +83,7 @@
               <a class="modal-close right "><i class="material-icons black-text">close</i></a>
               <div class="row" id="product-two">
                 <div class="col m6">
-                  <img width="100%" src="../../assets/img/salada-mista.jpg" class="responsive-img materialboxed" alt="">
+                  <img width="100%" src="../../../../assets/img/arroz-camarão.jpg" class="responsive-img materialboxed" alt="">
                 </div>
                 <div class="col m6">
                   <p>pizza</p>
@@ -84,8 +93,8 @@
                   <p>- Proin iaculis faucibus erat, ac</p>
                   <p>- Maecenas placerat massa in viverra aliquet</p>
                   <h5>R$ 35,00</h5>
-                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../login.html">+ CARRINHO</a>
-                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../login.html">COMPRAR</a>
+                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../carrinho.html">+ CARRINHO</a>
+                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../carrinho.html">COMPRAR</a>
                 </div>
               </div>
             </div>
@@ -101,7 +110,7 @@
             <div class="card-content">
               <p>Porcao</p>
               <span class="card-title text-ellipsis">Batata Frita</span>
-              <img width="100%" src="../../assets/img/tacos.jpg" class="responsive-img materialboxed" alt="">
+              <img width="100%" src="../../../../assets/img/Apple-pie.jpg" class="responsive-img materialboxed" alt="">
               <div class="row">
                 <h5 class="col s12 m12 l8 mt-3">R$10,00</h5>
                 <a class="col s12 m12 l4 margin-btn waves-effect waves-light btn-esquerda btn modal-trigger" href="#modal2">VER</a>
@@ -115,7 +124,7 @@
               <a class="modal-close right "><i class="material-icons black-text">close</i></a>
               <div class="row" id="product-two">
                 <div class="col m6">
-                  <img width="100%" src="../../assets/img/tacos.jpg" class="responsive-img materialboxed" alt="">
+                  <img width="100%" src="../../../../assets/img/Apple-pie.jpg.jpg" class="responsive-img materialboxed" alt="">
                 </div>
                 <div class="col m6">
                   <p>Batata Frita</p>
@@ -125,8 +134,8 @@
                   <p>- Proin iaculis faucibus erat, ac</p>
                   <p>- Maecenas placerat massa in viverra aliquet</p>
                   <h5>R$ 10,00</h5>
-                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../login.html">+ CARRINHO</a>
-                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../login.html">COMPRAR</a>
+                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../carrinho.html">+ CARRINHO</a>
+                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../carrinho.html">COMPRAR</a>
                 </div>
               </div>
             </div>
@@ -142,7 +151,7 @@
             <div class="card-content">
               <p>Cheesecake</p>
               <span class="card-title text-ellipsis">Cheesecake</span>
-              <img width="100%" src="../../assets/img/sushi-frito.jpg" class="responsive-img materialboxed" alt="">
+              <img width="100%" src="../../../../assets/img/hamburguer-tradicional.jpg" class="responsive-img materialboxed" alt="">
               <div class="row">
                 <h5 class="col s12 m12 l8 mt-3">R$ 12,00</h5>
                 <a class="col s12 m12 l4 margin-btn waves-effect waves-light btn-esquerda btn modal-trigger" href="#modal3">VER</a>
@@ -156,7 +165,7 @@
               <a class="modal-close right "><i class="material-icons black-text">close</i></a>
               <div class="row" id="product-two">
                 <div class="col m6">
-                  <img width="100%" src="../../assets/img/sushi-frito.jpg" class="responsive-img materialboxed" alt="">
+                  <img width="100%" src="../../../../assets/img/hamburguer-tradicional.jpg" class="responsive-img materialboxed" alt="">
                 </div>
                 <div class="col m6">
                   <p>cheesecake</p>
@@ -166,8 +175,8 @@
                   <p>- Proin iaculis faucibus erat, ac</p>
                   <p>- Maecenas placerat massa in viverra aliquet</p>
                   <h5>R$ 12,00</h5>
-                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../login.html">+ CARRINHO</a>
-                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../login.html">COMPRAR</a>
+                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../carrinho.html">+ CARRINHO</a>
+                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../carrinho.html">COMPRAR</a>
                 </div>
               </div>
             </div>
@@ -185,7 +194,7 @@
             <div class="card-content">
               <div class="row" id="product-two">
                 <div class="col m6">
-                  <img width="100%" src="../../assets/img/yakisoba.jpg" class="responsive-img materialboxed" alt="">
+                  <img width="100%" src="../../../../assets/img/pizza-azeitona.jpg" class="responsive-img materialboxed" alt="">
                 </div>
                 <div class="col m6">
                   <p>Promoção</p>
@@ -195,8 +204,8 @@
                   <p>- Proin iaculis faucibus erat, ac</p>
                   <p>- Maecenas placerat massa in viverra aliquet</p>
                   <h5>R$ 25,00</h5>
-                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../login.html">+ CARRINHO</a>
-                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../login.html">COMPRAR</a>
+                  <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="../carrinho.html">+ CARRINHO</a>
+                  <a class="waves-effect waves-light btn btn-direita margin-btn" href="../carrinho.html">COMPRAR</a>
                 </div>
               </div>
             </div>
@@ -209,13 +218,13 @@
 
 
       <ul class="pagination center">
-        <li class="waves-effect"><a href="04.html"><i class="material-icons">chevron_left</i></a></li>
+        <li class="waves-effect"><a href="../../index.html"><i class="material-icons">chevron_left</i></a></li>
         <li class="waves-effect"><a href="../../index.html">1</a></li>
-        <li class="waves-effect "><a href="02.html">2</a></li>
+        <li class="active"><a href="#!">2</a></li>
         <li class="waves-effect"><a href="03.html">3</a></li>
         <li class="waves-effect"><a href="04.html">4</a></li>
-        <li class="active"><a href="#!">5</a></li>
-        <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        <li class="waves-effect"><a href="05.html">5</a></li>
+        <li class="waves-effect"><a href="03.html"><i class="material-icons">chevron_right</i></a></li>
       </ul>
 
 
@@ -234,19 +243,20 @@
 
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="texto-branco">Cadastre-se</h5>
+        <div class="col l3 s6">
+          <h5 class="texto-branco">Carrinho</h5>
           <ul>
-            <li><a class="white-text" href="../cadastro.html"><b>Criar Conta</b></a></li>
+            <li><a class="white-text" href="../carrinho.html"><b>Meu Carrinho</b></a></li>
           </ul>
-
 
         </div>
-        <div class="col l3 s12">
-          <h5 class="texto-branco">Entrar</h5>
+        <div class="col l3 s6">
+          <h5 class="texto-branco">Usuario</h5>
           <ul>
-            <li><a class="white-text" href="../login.html"><b>Login</b></a></li>
+            <li><a class="white-text" href="../perfil.html"><b>Meu Perfil</b></a></li>
+            <li><a class="white-text" href="../pedidos.html"><b>Meus Pedidos</b></a></li>
           </ul>
+
         </div>
       </div>
     </div>
@@ -260,10 +270,10 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="../../assets/js/materialize.min.js"></script>
-  <script src="../../assets/js/init.js"></script>
-  <script src="../../assets/js/pacman.js"></script>
-  <script src="../../assets/js/all.min.js"></script>
+  <script src="../../../../assets/js/materialize.min.js"></script>
+  <script src="../../../../assets/js/init.js"></script>
+  <script src="../../../../assets/js/all.min.js"></script>
+  <script src="../../../../assets/js/dropify.js"></script>
 
 </body>
 
