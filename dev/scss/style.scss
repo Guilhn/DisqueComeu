@@ -14,14 +14,14 @@ $borda-title: #ff931f;
 $cor-title: #ffb61f;
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
-main {
-  flex: 1 0 auto;
-}
+  main {
+    flex: 1 0 auto;
+  }
 
 .input-field {
   input:focus {
@@ -243,6 +243,91 @@ main {
   background-color: $secundaria;
   border: none;
 }
+
+// status pedidos
+
+.espaco {
+  display: flex;
+}
+
+.board {
+  display: flex;
+  align-items: center;
+}
+
+.container_text {
+  display: flex;
+  justify-content: left;
+}
+
+
+.circle {
+  border-radius: 50%;
+  border: 3px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer_circle {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 3px solid black;
+  background-color: rgba(10, 23, 55, 0.0);
+}
+
+.linha_centro {
+  width: 250px;
+  height: 3px;
+  background: black;
+}
+
+.center_azul {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #0288d1;
+  background-color: #0288d1;
+}
+
+.center_amarelo {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #d3a900;
+  background-color: #FFCC00;
+}
+
+.center_verde {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: 3px solid #006633;
+  background-color: #009424;
+}
+
+.p1 {
+  font-family: verdana;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+.espaco_circulo {
+  width: 114px;
+  height: 0px;
+  background: #000;
+}
+
+
+// --------------------------------
+
+
+
+
+
 // -----------------------------------
 @media only screen and (max-width: 600px) {
   .fa-hamburger {
