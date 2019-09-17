@@ -1,5 +1,15 @@
+// -----------------------------------
+// IMPORT
+// -----------------------------------
+
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+
+// -----------------------------------
+// CORES
+// -----------------------------------
+
 $primaria: #b71c1c;
 $secundaria: #fb6f0c;
 $primaria-clara: #d63333;
@@ -13,6 +23,10 @@ $secundaria-btn-direita: #fd6031;
 $borda-title: #ff931f;
 $cor-title: #ffb61f;
 
+// -----------------------------------
+// Footer fixed
+// -----------------------------------
+
 body {
   display: flex;
   min-height: 100vh;
@@ -22,6 +36,10 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+// -----------------------------------
+// Padrao de cores em itens
+// -----------------------------------
 
 .input-field {
   input:focus {
@@ -136,6 +154,10 @@ main {
   }
 }
 
+// -----------------------------------
+// Espacamentos e fonte
+// -----------------------------------
+
 .margin-btn {
   margin-top: 15px;
 }
@@ -203,37 +225,12 @@ main {
     margin-left: 15px;
   }
 }
-// Estilo TItle
+// -----------------------------------
+// TITLE
+// -----------------------------------
 
 .text-border {
   text-shadow: 2px 0 0 $borda-title, -2px 0 0 $borda-title, 0 2px 0 $borda-title , 0 -2px 0 $borda-title, 1px 1px $borda-title, -1px -1px 0 $borda-title, 1px -1px 0 $borda-title, -1px 1px 0 $borda-title;
-}
-
-.title {
-  margin-left: 5%;
-  margin-top: 2px;
-  margin-bottom: 1px;
-  border: 0;
-  height: 65px;
-  width: 95%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #8e1f80, #8e1f80, #8e1f80, #8e1f80);
-  color: white;
-}
-
-.hr-title-top {
-  margin-left: 150px;
-  /* padding-left: 124px; */
-  height: 7px;
-  background-color: #8e1f80;
-  border: none;
-}
-
-.hr-title-bottom {
-  margin-left: 96px;
-  /* padding-left: 124px; */
-  height: 3px;
-  background-color: #dc2296;
-  border: none;
 }
 
 ul.stepper.horizontal {
@@ -247,6 +244,8 @@ ul.stepper.horizontal {
   background-color: $secundaria;
   border: none;
 }
+// -----------------------------------
+// MEDIA QUERY
 // -----------------------------------
 @media only screen and (max-width: 600px) {
   .fa-hamburger {

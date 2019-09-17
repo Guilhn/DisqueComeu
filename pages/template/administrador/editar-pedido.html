@@ -12,6 +12,8 @@
   <link href="../../../assets/img/favicon.ico" rel="icon" type="image/png" sizes="16x16">
   <link href="../../../assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="../../../assets/css/dropify.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="../../../assets/css/mstepper.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
 </head>
 
 <body class="fundo">
@@ -58,71 +60,116 @@
         <div class="row">
           <div>
             <p>
-              <h4 class="center cor-texto-terciaria font-title ">Pedido 001</h4>
+              <h5 class="center cor-texto-terciaria font-title ">Pedido: 0002</h5>
               <br>
             </p>
 
-            <div class="select-status">
-              <div class="input-field col s12 m6 offset-m3 card">
-                <h5 class="center cor-texto-secundaria">Status do pedido</h5>
-                <select class="fundo-branco">
-                  <option value="1" disabled selected>Novo</option>
-                  <option value="2">Leu o pedido</option>
-                  <option value="3">Saiu para Entrega</option>
-                  <option value="4">Entregue</option>
-                </select>
+            <div class="row">
+              <div class="col s12 m6 offset-m3">
+                <div class="card white darken-1">
+                  <div class="card-content white-text row">
+                    <span class="card-title cor-texto-secundaria center">Status do pedido</span>
+                    <br>
+                    <div class="col s10 offset-s1">
+                      <select class="fundo-branco">
+                        <option value="1" disabled>Novo</option>
+                        <option value="2" disabled selected>Leu o pedido</option>
+                        <option value="3">Saiu para Entrega</option>
+                        <option value="4">Entregue</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="card-action">
+                    <div class="row">
+                      <div class="col s12 m4 offset-m4">
+                        <a class="waves-effect center waves-light btn btn-esquerda margin-btn" href="pedidos.html">Salvar status</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <table class="responsive-table table highlight fundo-branco">
-              <tbody>
-                <tr class="padbottom texto-branco cor-fundo-primaria">
-                  <th class="center">item pedido</th>
-                  <th class="center">Quantidade</th>
-                  <th class="center">Valor</th>
+            <div class="row">
+              <div class="col s12 card">
+                <div class="row">
+                  <div class="col s3">
+                    <p class="grey-text  left"><b>Pedido: 0002</b></p>
+                  </div>
+                  <div class="col s12 ">
+                    <h5 class="center cor-texto-primaria font-title">Status</h5>
+                  </div>
+                </div>
+                <div class="col s12">
+                  <ul class="stepper horizontal" id="horizontal">
+                    <li class="step ">
+                      <div class="step-title ">Pedido Novo</div>
 
-                </tr>
-                <tr>
+                    </li>
+                    <li class="step active">
+                      <div class="step-title waves-effect waves-dark">Leu o pedido</div>
+                    </li>
+                    <li class="step">
+                      <div class="step-title waves-effect waves-dark">Saiu para Entrega</div>
+                    </li>
+                    <li class="step ">
+                      <div class="step-title waves-effect waves-dark">Entregue</div>
 
-                  <td class="center">Batata Frita</td>
-                  <td class="center">01</td>
-                  <td class="center">R$ 22,00</td>
+                    </li>
+                  </ul>
+                </div>
 
-                </tr>
-                <tr>
 
-                  <td class="center">Cheesecake</td>
-                  <td class="center">01</td>
-                  <td class="center">R$ 22,00</td>
-                </tr>
-                <tr>
+                <div class="col s12">
+                  <hr>
+                  <div class="row">
+                    <div class="col s6 offset-s3 m2">
+                      <img src="../../../assets/img/pizza.jpg" class="responsive-img materialboxed" alt="">
+                    </div>
+                    <div class="col s12 m10">
+                      <div class="row">
+                        <div class="col s12 m4">
+                          <p class="center"><b>Pizza de Calabresa</b></p>
+                        </div>
+                        <div class="col s12 m4">
+                          <p class="center">Data: 19/09/19</p>
+                        </div>
+                        <div class="col s12 m4">
+                          <p class="center"><b>1 un. R$ 35,00</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col s6 offset-s3 m2">
+                      <img src="../../../assets/img/batata-frita.jpg" class="responsive-img materialboxed" alt="">
+                    </div>
+                    <div class="col s12 m10">
+                      <div class="row">
+                        <div class="col s12 m4">
+                          <p class="center"><b>Batata Frita</b></p>
+                        </div>
+                        <div class="col s12 m4">
+                          <p class="center">Data: 19/09/19</p>
+                        </div>
+                        <div class="col s12 m4">
+                          <p class="center"><b>1 un. R$ 10,00</b></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
 
-                  <td class="center">Combo: Hamburguer + Batata frita</td>
-                  <td class="center">02</td>
-                  <td class="center">R$ 25,00</td>
-                </tr>
-                <tr>
+                  <div class="row">
+                    <div class="col s12">
+                      <h5 class="center"><b>Total:</b> R$ 45,00</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                  <td class="center">Pizza de Calabresa</td>
-                  <td class="center">01</td>
-                  <td class="center">R$ 35,00</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <table class="responsive-table table highlight fundo-branco">
-              <tbody>
-                <tr class="padbottom ">
-                  <th class="cor-fundo-primaria center texto-branco ">Total</th>
-                  <td class="center">R$ 104,00</td>
-                </tr>
-
-              </tbody>
-            </table>
-
-            <div class="center btn-carrinho">
-              <a class="waves-effect waves-light btn btn-esquerda margin-btn" href="pedidos.html">Salvar status</a>
             </div>
+
+
 
 
 
